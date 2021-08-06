@@ -1,3 +1,20 @@
-.body{
+body{
     background-color: yellow;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 } 
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 24px;
+}
+main section article p.precio{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+}
+h4{
+    font-size: 16px;
+}
