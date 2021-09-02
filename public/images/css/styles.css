@@ -1,20 +1,5 @@
-body{
-    background-color: yellow;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-} 
-h1{
-    font-size: 24px;
-}
-h3{
-    font-size: 24px;
-}
-main section article p.precio{
-    font-size: 18px;
-}
-p{
-    font-size: 16px;
-}
-h4{
-    font-size: 16px;
-}
+@import url('./general.css');
+@import url('./header.css');
+@import url('./home.css');
+@import url('./footer.css');
+@import url('./formularios.css');

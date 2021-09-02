@@ -1,0 +1,109 @@
+.home main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section h4 {
+    width: 100%;
+}
+/*Articulos*/
+main section article {
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/*datos de los productos*/
+div.data {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+main.productos {
+    width: auto;
+}
+
+/* camion de envios*/
+
+div.data i {
+    color: #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+main section article img {
+    width: 90%;
+}
+
+.home main section article .data .precio-descuento {
+    display: flex;
+}
+
+/*precio*/
+main section article p.precio {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+/*descuento*/
+p.descuento {
+    color: #39b54a;
+    font-size: 23px;
+    border: 1px, solid #ebebeb;
+    margin: 10px;
+    flex-grow: 0.7;
+}
+
+/*oferta*/
+h3 {
+    display: block;
+    font-size: 24px;
+
+}
+/*descripcion*/
+p.descripcion{
+    display: none;
+    color: var(--GrisOscuro);
+    font-size: 16px;
+}
+
+/*tabllet*/
+
+@media (min-width: 768px) {
+    .home main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    /*descriipcion*/
+    .home main section article .data .descripcion {
+        display: block;
+    }
+}
+
+/* escritorio*/
+@media (min-width: 1024px) {
+    .home main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+}

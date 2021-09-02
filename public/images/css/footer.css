@@ -1,0 +1,27 @@
+/*Footer*/
+.footer {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer section.footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width :768px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (min-width : 1024px) {
+    body {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

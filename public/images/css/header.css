@@ -1,0 +1,112 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    padding: 30px 20px 20px 20px;
+    font-size: 12px;
+}
+
+/*Logo*/
+header .logo-ml {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-ml .logo {
+    width: 48%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+header .logo-ml .buscador {
+    width: 48%;
+}
+
+header .logo-ml .buscador input {
+    width: 80%;
+}
+
+/*buscador*/
+.buscador {
+    width: 48%;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+
+header p.compra {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*NAVEGACION*/
+header nav {
+    display: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*header nav ul.nav-bar {
+    margin: 20px 0;
+}*/
+
+
+/*boton de hamburguesa*/
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    margin-top: 25px;
+    padding: 10px;
+    color: #ebebeb;
+    background-color: #1259c3;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+/*banner*/
+div.banner img {
+    width: 100%;
+    /*aún no lo termine*/
+}
+
+/*tablet*/
+@media(min-width: 768px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul{
+        display: flex;
+    }
+    header nav ul li{
+        margin: 0 6px ;
+    }
+    header .logo-ml .logo {
+        width: 32%;
+    }
+
+    header .logo-ml .buscador {
+        width: 32%;
+    }
+
+    header p.compra {
+        width: 32%;
+    }
+
+    header .burger-menu {
+        display: none;
+    }
+}
+
+/*escritorio*/
+@media(min-width: 1024px) {
+    header nav ul li{
+        margin: 0 10px ;
+    }
+}
