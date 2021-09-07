@@ -1,0 +1,50 @@
+body.register-login {
+    margin: auto;
+    background-color: lightgray;
+}
+
+/*contenedor general*/
+.register-login .contenedor {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 375px;
+}
+
+.register-login .contenedor h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.register-login .contenedor  h3{
+    font-family: 'Roboto', sans-serif;
+}
+/*contenedor input*/
+.register-login .contenedor .container-input {
+    display: flex;
+    margin: 20px 0;
+}
+
+/*inputs*/
+input.text {
+    width: 100%;
+}
+.register-login .contenedor .container-input input{
+    padding: 10px;
+    border-radius:5px;
+    border: none;
+}
+.register-login .contenedor .container-input .radio {
+    margin: 4px 15px;
+}
+
+
+/*contenedores de botones*/
+.register-login .contenedor .container-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.register-login .contenedor .container-buttons .button {
+    color: white;
+}

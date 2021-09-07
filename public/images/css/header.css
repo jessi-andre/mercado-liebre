@@ -1,5 +1,4 @@
 header {
-    font-family: 'Roboto', sans-serif;
     background-color: #EAC926;
     padding: 30px 20px 20px 20px;
     font-size: 12px;
@@ -19,19 +18,46 @@ header .logo-ml .logo {
     margin-bottom: 10px;
 }
 
-header .logo-ml .buscador {
-    width: 48%;
-}
-
-header .logo-ml .buscador input {
-    width: 80%;
-}
-
 /*buscador*/
-.buscador {
+header .buscador {
     width: 48%;
     margin-left: 10px;
     padding: 3px;
+    display: flex;
+}
+
+header .logo-ml .buscador {
+    width: 80%;
+}
+
+form {
+    margin-top: 0em;
+    display: block;
+}
+
+/*input*/
+header .logo-ml .buscador input {
+    flex-grow: 1;
+    border-radius: 5px 0 0 5px;
+    padding: 9px;
+}
+
+/*boton*/
+header button{
+    display: contents;
+}
+button i {
+    background-color: white;
+    color: var(--GrisOscuro);
+    border-radius: 0 5px 5px 0;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+}
+
+/*boton hover*/
+.button:hover {
+    cursor: pointer;
 }
 
 
@@ -39,15 +65,24 @@ header p.compra {
     width: 100%;
     text-align: center;
     margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*NAVEGACION*/
 header nav {
     display: none;
 }
+
+header nav ul li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
 header nav ul li a{
     text-decoration: none;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 /*header nav ul.nav-bar {
@@ -69,24 +104,21 @@ header nav ul li a{
     border-radius: 10px;
 }
 
-/*banner*/
-div.banner img {
-    width: 100%;
-    /*aún no lo termine*/
-}
-
 /*tablet*/
 @media(min-width: 768px) {
     header nav {
         display: flex;
         justify-content: space-between;
     }
-    header nav ul{
+
+    header nav ul {
         display: flex;
     }
-    header nav ul li{
-        margin: 0 6px ;
+
+    header nav ul li {
+        margin: 0 6px;
     }
+
     header .logo-ml .logo {
         width: 32%;
     }
@@ -107,6 +139,6 @@ div.banner img {
 /*escritorio*/
 @media(min-width: 1024px) {
     header nav ul li{
-        margin: 0 10px ;
+        margin: 0 10px;
     }
 }

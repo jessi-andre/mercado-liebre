@@ -1,56 +1,92 @@
+body.home {
+    margin: auto;
+    background-color: lightgray;
+}
+
+/*banner*/
+.home main .banner {
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/*MAIN*/
 .home main {
+    background-color: var(--GrisClaro);
     width: 90%;
     margin: 0 auto;
 }
 
-main section {
+/*articulos*/
+.home main section {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-main section h4 {
+.home main section h4 {
     width: 100%;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    display: block;
 }
-/*Articulos*/
-main section article {
-    margin: 10px;
+
+.home main section article {
+    margin: 10px 0;
     background-color: #ffffff;
+    transition: all ease .3s;
+
+}
+
+.home main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
+.home main section article:hover .data .descripcion {
+    height: 20px;
+    margin-top: 10px;
+}
+
 /*datos de los productos*/
-div.data {
+.home div.data {
     border-top: 1px solid #ebebeb;
     padding: 15px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-} 
+}
 
-main.productos {
+.home main.productos {
     width: auto;
 }
 
-/* camion de envios*/
+/* camion de envíos*/
 
-div.data i {
+.home main section article .data i {
     color: #39b54a;
     border-radius: 50%;
     padding: 5px;
     display: block;
     font-size: 16px;
-    width: 30px;
-    height: 30px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all ease .3s;
 }
 
+.home main section article:hover .data i {
+    box-shadow: 0 0 5px var(--Verde);
+    transform: rotate(360deg);
+}
 
-main section article img {
+.home main section article img {
     width: 90%;
 }
 
@@ -59,13 +95,14 @@ main section article img {
 }
 
 /*precio*/
-main section article p.precio {
+.home main section article .data .precio {
     font-size: 18px;
     flex-grow: 0.3;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*descuento*/
-p.descuento {
+.home main section article .data .descuento {
     color: #39b54a;
     font-size: 23px;
     border: 1px, solid #ebebeb;
@@ -73,24 +110,45 @@ p.descuento {
     flex-grow: 0.7;
 }
 
-/*oferta*/
-h3 {
-    display: block;
-    font-size: 24px;
-
-}
 /*descripcion*/
-p.descripcion{
-    display: none;
+.home main section article .data .descripcion {
+    height: 0;
+    transition: all ease .3s;
+    overflow: hidden;
     color: var(--GrisOscuro);
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.home main section article:hover .data .descripcion {
+    height: 20px;
+    margin-top: 10px;
+}
+
+/*oferta*/
+div.productos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home main section h3 {
+    width: 100%;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+
 
 /*tabllet*/
 
 @media (min-width: 768px) {
     .home main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
     }
 
@@ -103,7 +161,6 @@ p.descripcion{
 /* escritorio*/
 @media (min-width: 1024px) {
     .home main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 20%;
     }
 }

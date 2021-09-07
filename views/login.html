@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Ingresar</title>
     <!--Icono en pestaña-->
     <link rel="shortcut icon" href="/images/logo-mercado-liebre.svg" type="image/x-icon">
     <!--Fuente-->
@@ -28,8 +28,8 @@
             <!-- Buscador -->
             <div class="buscador">
                 <form action="">
-                    <input type="text" name="buscar" placeholder="Bucar producto, marca">
-                    <button type="submit" ><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Bucar producto, marca">
+                    <button><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
@@ -62,81 +62,22 @@
     <!--MAIN-->
     <main>
         <div class="contenedor">
-            <h1>Ingresa!</h1>
-            <form action="">
+            <form class="contenedor-" action="">
 
-                <!--fullname-->
-                <div class="container-input">
-                    <input class="text" id="fullName" type="text" placeholder="Nombre y apellido" name="fullname">
-                </div>
 
                 <!--username-->
                 <div class="container-input">
                     <input class="text" type="text" placeholder="Nombre de usuari@" name="username">
                 </div>
 
-                <h3>Fecha de nacimiento</h3>
-                <!--nacimiento-->
-                <div class="container-input">
-                    <input class="text"  type="date" name="date">
-                </div>
-
-                <!--domicilio-->
-                <div class="container-input">
-                    <input class="text" type="text" name="domicilio" placeholder="domicilio">
-                </div>
-
-                <!--perfiles-->
-                <h3>Perfil de usuario</h3>
-                <div class="container-input">
-                    <input class="radio" type="radio" name="perfil" value="comprador" id="comprador"> <label
-                        for="comprador">Comprador</label>
-
-                    <input class="radio" type="radio" name="perfil" value="vendedor" id="vendedor"> <label
-                        for="vendedor">Vendedor</label>
-                </div>
-
-                <!--intereses-->
-                <h3>Intereses</h3>
-                <div class="container-input">
-                    <input class="radio" type="checkbox" name="intereses" value="electro" id="electro"> <label
-                        for="electro">Electro</label>
-                </div>
-                <div class="container-input">
-                    <input class="radio" type="checkbox" name="intereses" value="moda" id="moda"> <label
-                        for="moda">Moda</label>
-                </div>
-                <div class="container-input">
-                    <input class="radio" type="checkbox" name="intereses" value="hogar" id="hogar"> <label
-                        for="hogar">Hogar</label>
-                </div>
-                <div class="container-input">
-                    <input class="radio" type="checkbox" name="intereses" value="jugetería" id="jugetería"> <label
-                        for="jugetería">Juguetería</label>
-                </div>
-                <div class="container-input">
-                    <input class="radio" type="checkbox" name="intereses" value="vida sana" id="vida sana"> <label
-                        for="vida sana">Vida sana</label>
-                </div>
-                <!--foto de perfil-->
-                <h3>Foto de perfil</h3>
-                <div class="container-imput">
-                    <input type="file" name="img">
-                </div>
                 <!--contraseña-->
                 <div class="container-input">
-                    <input class="text" type="password" name="pass" placeholder="Contraseña" minlength="8">
-                </div>
-
-                <!--repetir constraseña-->
-                <div class="container-input">
-                    <input class="text"  type="passsword" name="repeat-pass" placeholder="Repetir contraseña">
+                    <input class="text" type="password" name="pass" placeholder="Contraseña">
                 </div>
 
                 <!-- botones-->
                 <div class="container-buttons">
-                    <button class="btn-verde" type="submit">Registrarse</button>
-                    <button class="btn-rojo" type="reset">Resetear</button>
+                    <button class="btn-verde" type="submit">Ingresar</button>
                 </div>
             </form>
         </div>
