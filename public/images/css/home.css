@@ -1,4 +1,4 @@
-body.home {
+.home {
     margin: auto;
     background-color: lightgray;
 }
@@ -15,8 +15,8 @@ body.home {
 /*MAIN*/
 .home main {
     background-color: var(--GrisClaro);
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto 20px;
 }
 
 /*articulos*/
@@ -81,6 +81,28 @@ body.home {
     transition: all ease .3s;
 }
 
+.home .envio {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: transform .5s;
+    transform: rotate(0deg);
+}
+
+.home .envio:hover {
+    transition: transform .5s;
+    transform: rotate(-90deg);
+}
+
+
 .home main section article:hover .data i {
     box-shadow: 0 0 5px var(--Verde);
     transform: rotate(360deg);
@@ -108,6 +130,7 @@ body.home {
     border: 1px, solid #ebebeb;
     margin: 10px;
     flex-grow: 0.7;
+    display: flex;
 }
 
 /*descripcion*/
@@ -144,12 +167,26 @@ div.productos {
 }
 
 
-
-/*tabllet*/
+/*>>>>>> DISEÑO ADAPTATIVO <<<<<<*/
+/*tablet*/
 
 @media (min-width: 768px) {
     .home main section article {
         width: 40%;
+    }
+    .home main{
+        width:90%;
+        margin: 0 auto 20px;
+    }
+    .home .producto{
+        width: 45%;
+        box-shadow:0;
+        margin: 0 0 35px;
+        transition:box-shadow .5s;
+    }
+
+    .home .producto:hover{
+        box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
     }
 
     /*descriipcion*/
@@ -162,5 +199,8 @@ div.productos {
 @media (min-width: 1024px) {
     .home main section article {
         width: 20%;
+    }
+    .home header nav li{
+        margin: 0 10px;
     }
 }
